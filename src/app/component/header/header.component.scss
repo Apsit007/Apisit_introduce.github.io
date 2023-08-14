@@ -1,0 +1,205 @@
+/* Rest of your existing styles */
+
+/* Header styles */
+.header {
+  height: 520px;
+  background: linear-gradient(to top, #1E90FF, #000000);;
+  background-size: 100% 1000%;
+  /* Set background size to twice the width to create animation effect */
+  animation: headerAnimation 15s ease-in-out forwards infinite alternate;
+  overflow: hidden;
+  position: relative;
+}
+
+.icon-box {
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  grid-auto-flow: column;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.ground {
+  background-color: #f9ffc0;
+}
+
+.header-content {
+  position: relative;
+  text-align: start;
+  padding: 80px 0px 0px 10px;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.header h4 {
+  margin: 0 0 11px;
+  font-size: 24px;
+
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.contact-list li {
+  margin-bottom: 5px;
+}
+
+.contact-list li i {
+  margin-right: 5px;
+}
+
+
+
+
+.cloud-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.cloud01 {
+
+  max-width: 100%;
+  max-height: 100%;
+  width: 1220px;
+  opacity: 90%;
+  height: 318px;
+  rotate: -18deg;
+  background-image: url(/assets/picture/cloud02.png);
+  background-repeat: no-repeat;
+
+}
+
+.cloud01-box {
+  right: -662px;
+  position: absolute;
+  bottom: -41px;
+  animation: left-to-right 15s ease-in-out forwards infinite alternate;
+  // animation: zoom-in 10s ease-in-out forwards infinite alternate;
+}
+
+.link-icon-bar {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: column;
+  gap: 15px;
+
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  // background-image: linear-gradient(to top, rgba(8, 7, 14, 1) 0%, rgba(8, 7, 14, 0.75) 25%, rgba(8, 7, 14, 0.5) 50%, rgba(8, 7, 14, 0.25) 75%, rgba(8, 7, 14, 0) 100%);
+  background-image: linear-gradient(to top, rgb(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.75) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.25) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+.icon {
+  font-size: 40px;
+  /* You can adjust the size as needed */
+  // color: white;
+  // background-image: linear-gradient(45deg,
+  //     hsl(240deg 100% 69%) 0%,
+  //     hsl(309deg 75% 62%) 20%,
+  //     hsl(339deg 100% 71%) 40%,
+  //     hsl(13deg 100% 75%) 60%,
+  //     hsl(36deg 100% 76%) 80%,
+  //     hsl(55deg 100% 84%) 100%);
+  // -webkit-background-clip: text;
+  // -moz-background-clip: text;
+  // background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  color: aliceblue;
+}
+
+.cv-icon {
+  display: inline-block;
+  width: 100px;
+  /* Adjust the width and height to match your icon size */
+  height: 40px;
+  // background-image: linear-gradient(45deg,
+  //     hsl(240deg, 100%, 69%) 0%,
+  //     hsl(309deg, 75%, 62%) 20%,
+  //     hsl(339deg, 100%, 71%) 40%,
+  //     hsl(13deg, 100%, 75%) 60%,
+  //     hsl(36deg, 100%, 76%) 80%,
+  //     hsl(55deg, 100%, 84%) 100%);
+  background-color: aliceblue;
+  /* Apply the SVG mask and set the size */
+  -webkit-mask-image: url('/assets/picture/CV-icon (2).png');
+  mask-image: url('/assets/picture/CV-icon (2).png');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+
+}
+
+.profile-img {
+  width: 460px;
+  position: absolute;
+  right: 8%;
+  top: -33%;
+}
+
+
+.icon-box>i:hover,
+img:hover {
+  transform: scale(1.04);
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+
+  }
+
+  100% {
+    transform: translateX(-5%);
+
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+
+  }
+
+  100% {
+    transform: scale(1.08);
+
+  }
+
+}
+
+/* Header background animation */
+@keyframes headerAnimation {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  100% {
+    background-position: 50% 100%;
+  }
+}

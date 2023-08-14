@@ -1,0 +1,55 @@
+/* Education styles */
+.education {
+
+  height: 500px;
+  display: grid;
+  justify-items: center;
+}
+
+.header-text {
+  color: rgb(255, 105, 24);
+  font-size: 30px;
+  position: relative;
+}
+
+.education-item {
+  margin-bottom: 30px;
+}
+
+.education-item h3 {
+  color: var(--primary-color);
+  margin: 0 0 5px;
+}
+
+.education-date {
+  color: #888;
+}
+
+/* Photo mockup */
+.photo-mockup {
+  position: absolute;
+  top: 27%;
+  right: -8%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #333;
+  background-image: url('/assets/picture/profile.jpg');
+  /* Replace with your photo URL */
+  background-size: cover;
+  // background-position: center;
+}
+h3{
+  font-family: Georgia, serif;
+  font-size: 19px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}

@@ -1,0 +1,49 @@
+/* Skills styles */
+
+.skills {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 0px 50px 0px 50px;
+}
+
+.skill-chart {
+  background-image: url('/assets/picture/spack-background.jpg');
+  background-size: 100%;
+  width: 380px;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0%;
+}
+
+.skill-detail {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 8em;
+  grid-row-gap: 2rem;
+}
+
+h1 {
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+h2,
+h3 {
+  display: inline;
+  margin: 3px;
+}
+
+.other-skill {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
