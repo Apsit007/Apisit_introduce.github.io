@@ -78,7 +78,7 @@
   opacity: 90%;
   height: 318px;
   rotate: -18deg;
-  background-image: url(/assets/picture/cloud02.png);
+  background-image: url("../../../assets/picture/cloud02.png");
   background-repeat: no-repeat;
 
 }
@@ -148,8 +148,8 @@
   //     hsl(55deg, 100%, 84%) 100%);
   background-color: aliceblue;
   /* Apply the SVG mask and set the size */
-  -webkit-mask-image: url('/assets/picture/CV-icon (2).png');
-  mask-image: url('/assets/picture/CV-icon (2).png');
+  -webkit-mask-image: url('../../../assets/picture/CV-icon (2).png');
+  mask-image: url('../../../assets/picture/CV-icon (2).png');
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 
