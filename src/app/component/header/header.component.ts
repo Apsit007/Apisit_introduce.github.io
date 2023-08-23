@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   }
   
   downloadPdf(): void {
-    const pdfUrl = 'https://github.com/Apsit007/Apisit_introduce.github.io/blob/master/src/assets/Apisit%20Purisan.pdf'; // Replace with the actual PDF URL
+    const pdfUrl = 'https://github.com/Apsit007/Apisit_introduce.github.io/raw/master/src/assets/Apisit%20Purisan.pdf'; // Replace with the actual PDF URL
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'Apisit_Purisan.pdf'; // Specify the desired downloaded file name
